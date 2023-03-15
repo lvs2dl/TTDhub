@@ -1,4 +1,4 @@
-ESB Exploit Scripts BR Entre agora!
+-- ESB Exploit Scripts BR Entre agora! --
 
 local soundgroup = Instance.new("SoundGroup", game.SoundService)
 soundgroup.Volume = 1
