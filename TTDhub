@@ -1,31 +1,7 @@
--- ESB Exploit Scripts BR Entre agora! --
+-- ESB remember, never give up
 
-local soundgroup = Instance.new("SoundGroup", game.SoundService)
-soundgroup.Volume = 1
-soundgroup.Name = "NotifyGroup"
-local sound = Instance.new("Sound", soundgroup)
-sound.SoundId = "rbxassetid://1862045322"
-sound.Volume = 1
-sound.Name = "Notify"
--- para tocar a notifacao digite sound:Play() -- esb
-local realplrname = Instance.new("StringValue")
-
--- Instances:
-
-local AberturaESB = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local ESB1 = Instance.new("ImageLabel")
-local ESB2 = Instance.new("ImageLabel")
-local ESB3 = Instance.new("ImageLabel")
-local ESB4 = Instance.new("ImageLabel")
-local ESB5 = Instance.new("ImageLabel")
-local ESB6 = Instance.new("ImageLabel")
-local ESB7 = Instance.new("ImageLabel")
-local ESB8 = Instance.new("ImageLabel")
-local ESB = Instance.new("ImageLabel")
-local Frameclear = Instance.new("Frame")
 local TTDhub = Instance.new("ScreenGui")
-local Frame_2 = Instance.new("Frame")
+local Frame = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
 local Menu = Instance.new("Frame")
@@ -82,119 +58,32 @@ local Notificacao = Instance.new("ImageLabel")
 local TextLabel_9 = Instance.new("TextLabel")
 local Notitxt_2 = Instance.new("TextLabel")
 local ImageButton_3 = Instance.new("ImageButton")
-
---Properties:
-
-AberturaESB.Name = "AberturaESB"
-AberturaESB.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-AberturaESB.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-Frame.Parent = AberturaESB
-Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.386834979, 0, 0.276292324, 0)
-Frame.Visible = false
-
-ESB1.Name = "ESB1"
-ESB1.Parent = Frame
-ESB1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESB1.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESB1.BorderSizePixel = 0
-ESB1.Size = UDim2.new(1, 0, 1, 0)
-ESB1.Image = "http://www.roblox.com/asset/?id=12716765667"
-
-ESB2.Name = "ESB2"
-ESB2.Parent = Frame
-ESB2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESB2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESB2.BorderSizePixel = 0
-ESB2.Size = UDim2.new(1, 0, 1, 0)
-ESB2.Visible = false
-ESB2.Image = "http://www.roblox.com/asset/?id=12716766581"
-
-ESB3.Name = "ESB3"
-ESB3.Parent = Frame
-ESB3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESB3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESB3.BorderSizePixel = 0
-ESB3.Size = UDim2.new(1, 0, 1, 0)
-ESB3.Visible = false
-ESB3.Image = "http://www.roblox.com/asset/?id=12716767441"
-
-ESB4.Name = "ESB4"
-ESB4.Parent = Frame
-ESB4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESB4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESB4.BorderSizePixel = 0
-ESB4.Size = UDim2.new(1, 0, 1, 0)
-ESB4.Visible = false
-ESB4.Image = "http://www.roblox.com/asset/?id=12716768289"
-
-ESB5.Name = "ESB5"
-ESB5.Parent = Frame
-ESB5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESB5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESB5.BorderSizePixel = 0
-ESB5.Size = UDim2.new(1, 0, 1, 0)
-ESB5.Visible = false
-ESB5.Image = "http://www.roblox.com/asset/?id=12716769250"
-
-ESB6.Name = "ESB6"
-ESB6.Parent = Frame
-ESB6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESB6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESB6.BorderSizePixel = 0
-ESB6.Size = UDim2.new(1, 0, 1, 0)
-ESB6.Visible = false
-ESB6.Image = "http://www.roblox.com/asset/?id=12716802770"
-
-ESB7.Name = "ESB7"
-ESB7.Parent = Frame
-ESB7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESB7.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESB7.BorderSizePixel = 0
-ESB7.Size = UDim2.new(1, 0, 1, 0)
-ESB7.Visible = false
-ESB7.Image = "http://www.roblox.com/asset/?id=12716804112"
-
-ESB8.Name = "ESB8"
-ESB8.Parent = Frame
-ESB8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESB8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESB8.BorderSizePixel = 0
-ESB8.Size = UDim2.new(1, 0, 1, 0)
-ESB8.Visible = false
-ESB8.Image = "http://www.roblox.com/asset/?id=12716805335"
-
-ESB.Name = "ESB"
-ESB.Parent = Frame
-ESB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESB.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESB.BorderSizePixel = 0
-ESB.Size = UDim2.new(1, 0, 1, 0)
-ESB.Visible = false
-ESB.Image = "http://www.roblox.com/asset/?id=12716855342"
-
-Frameclear.Name = "Frameclear"
-Frameclear.Parent = Frame
-Frameclear.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
-Frameclear.BorderSizePixel = 0
-Frameclear.Size = UDim2.new(1, 0, 0, 0)
-Frameclear.Visible = false
+local AberturaESB = Instance.new("ScreenGui")
+local Frame_2 = Instance.new("Frame")
+local ESB1 = Instance.new("ImageLabel")
+local ESB2 = Instance.new("ImageLabel")
+local ESB3 = Instance.new("ImageLabel")
+local ESB4 = Instance.new("ImageLabel")
+local ESB5 = Instance.new("ImageLabel")
+local ESB6 = Instance.new("ImageLabel")
+local ESB7 = Instance.new("ImageLabel")
+local ESB8 = Instance.new("ImageLabel")
+local ESB = Instance.new("ImageLabel")
+local Frameclear = Instance.new("Frame")
 
 TTDhub.Name = "TTDhub"
 TTDhub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 TTDhub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 TTDhub.ResetOnSpawn = false
 
-Frame_2.Parent = TTDhub
-Frame_2.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
-Frame_2.BorderSizePixel = 0
-Frame_2.Position = UDim2.new(0.0391290784, 261, 0.51908648, -136)
-Frame_2.Size = UDim2.new(0, 500, 0, 20)
-Frame_2.Visible = false
+Frame.Parent = TTDhub
+Frame.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.0391290784, 261, 0.51908648, -136)
+Frame.Size = UDim2.new(0, 500, 0, 20)
+Frame.Visible = false
 
-TextButton.Parent = Frame_2
+TextButton.Parent = Frame
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.BackgroundTransparency = 1.000
 TextButton.Position = UDim2.new(0.956228137, 0, 0, 0)
@@ -206,7 +95,7 @@ TextButton.TextColor3 = Color3.fromRGB(149, 73, 255)
 TextButton.TextSize = 30.000
 TextButton.TextWrapped = true
 
-TextLabel.Parent = Frame_2
+TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.Size = UDim2.new(0.201206252, 0, 1.00000012, 0)
@@ -218,7 +107,7 @@ TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
 Menu.Name = "Menu"
-Menu.Parent = Frame_2
+Menu.Parent = Frame
 Menu.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
 Menu.BorderSizePixel = 0
 Menu.Position = UDim2.new(0.00015197754, 0, 0.981550574, 0)
@@ -346,7 +235,7 @@ TextLabel_4.BorderSizePixel = 0
 TextLabel_4.Position = UDim2.new(-0.0058285296, 0, 0, 0)
 TextLabel_4.Size = UDim2.new(1, 0, 1, 0)
 TextLabel_4.Font = Enum.Font.SourceSansBold
-TextLabel_4.Text = "Feito por: (ESB) lv20dl"
+TextLabel_4.Text = "Feito por: (ESB) lv22"
 TextLabel_4.TextColor3 = Color3.fromRGB(62, 130, 255)
 TextLabel_4.TextScaled = true
 TextLabel_4.TextSize = 14.000
@@ -837,12 +726,618 @@ ImageButton_3.Size = UDim2.new(0, 20, 0, 20)
 ImageButton_3.Image = "rbxassetid://3570695787"
 ImageButton_3.ImageColor3 = Color3.fromRGB(255, 0, 0)
 
-realplrname.Parent = plrname
-realplrname.Name = realplrname
+AberturaESB.Name = "AberturaESB"
+AberturaESB.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+AberturaESB.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
--- Scripts:
+Frame_2.Parent = AberturaESB
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.386834979, 0, 0.276292324, 0)
+Frame_2.Visible = false
 
-local function NUHKXKE_fake_script() -- AberturaESB.LocalScript 
+ESB1.Name = "ESB1"
+ESB1.Parent = Frame_2
+ESB1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESB1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESB1.BorderSizePixel = 0
+ESB1.Size = UDim2.new(1, 0, 1, 0)
+ESB1.Image = "http://www.roblox.com/asset/?id=12716765667"
+
+ESB2.Name = "ESB2"
+ESB2.Parent = Frame_2
+ESB2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESB2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESB2.BorderSizePixel = 0
+ESB2.Size = UDim2.new(1, 0, 1, 0)
+ESB2.Visible = false
+ESB2.Image = "http://www.roblox.com/asset/?id=12716766581"
+
+ESB3.Name = "ESB3"
+ESB3.Parent = Frame_2
+ESB3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESB3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESB3.BorderSizePixel = 0
+ESB3.Size = UDim2.new(1, 0, 1, 0)
+ESB3.Visible = false
+ESB3.Image = "http://www.roblox.com/asset/?id=12716767441"
+
+ESB4.Name = "ESB4"
+ESB4.Parent = Frame_2
+ESB4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESB4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESB4.BorderSizePixel = 0
+ESB4.Size = UDim2.new(1, 0, 1, 0)
+ESB4.Visible = false
+ESB4.Image = "http://www.roblox.com/asset/?id=12716768289"
+
+ESB5.Name = "ESB5"
+ESB5.Parent = Frame_2
+ESB5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESB5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESB5.BorderSizePixel = 0
+ESB5.Size = UDim2.new(1, 0, 1, 0)
+ESB5.Visible = false
+ESB5.Image = "http://www.roblox.com/asset/?id=12716769250"
+
+ESB6.Name = "ESB6"
+ESB6.Parent = Frame_2
+ESB6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESB6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESB6.BorderSizePixel = 0
+ESB6.Size = UDim2.new(1, 0, 1, 0)
+ESB6.Visible = false
+ESB6.Image = "http://www.roblox.com/asset/?id=12716802770"
+
+ESB7.Name = "ESB7"
+ESB7.Parent = Frame_2
+ESB7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESB7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESB7.BorderSizePixel = 0
+ESB7.Size = UDim2.new(1, 0, 1, 0)
+ESB7.Visible = false
+ESB7.Image = "http://www.roblox.com/asset/?id=12716804112"
+
+ESB8.Name = "ESB8"
+ESB8.Parent = Frame_2
+ESB8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESB8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESB8.BorderSizePixel = 0
+ESB8.Size = UDim2.new(1, 0, 1, 0)
+ESB8.Visible = false
+ESB8.Image = "http://www.roblox.com/asset/?id=12716805335"
+
+ESB.Name = "ESB"
+ESB.Parent = Frame_2
+ESB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESB.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESB.BorderSizePixel = 0
+ESB.Size = UDim2.new(1, 0, 1, 0)
+ESB.Visible = false
+ESB.Image = "http://www.roblox.com/asset/?id=12716855342"
+
+Frameclear.Name = "Frameclear"
+Frameclear.Parent = Frame_2
+Frameclear.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Frameclear.BorderSizePixel = 0
+Frameclear.Size = UDim2.new(1, 0, 0, 0)
+Frameclear.Visible = false
+
+local function FOLYQM_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Menu.Visible = not script.Parent.Parent.Menu.Visible
+	end)
+end
+coroutine.wrap(FOLYQM_fake_script)()
+local function PSPFPNU_fake_script() -- TextLabel_2.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_2)
+
+	local plrname = game.Players.LocalPlayer.DisplayName
+
+	script.Parent.Text = "Olá, "..plrname
+end
+coroutine.wrap(PSPFPNU_fake_script)()
+local function BIKV_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local notify = script.Parent.Parent.Parent.Parent.Parent.Parent.NotificacaoFechar
+		notify.Visible = true
+		game.SoundService:WaitForChild("NotifyGroup"):WaitForChild("Notify"):Play()
+		notify:TweenPosition(UDim2.new(0.386, 0,0.014, 0),
+			Enum.EasingDirection.In,
+			Enum.EasingStyle.Quart,
+			0.5
+		)
+	end)
+end
+coroutine.wrap(BIKV_fake_script)()
+local function GGPSCGR_fake_script() -- TextButton_2.Hover 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	local color = script.Parent.TextColor3
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(149, 73, 255)
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = color
+	end)
+end
+coroutine.wrap(GGPSCGR_fake_script)()
+local function EWGNFCV_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+	end)
+end
+coroutine.wrap(EWGNFCV_fake_script)()
+local function CYHNKRD_fake_script() -- TextButton_3.Hover 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	local color = script.Parent.TextColor3
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(149, 73, 255)
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = color
+	end)
+end
+coroutine.wrap(CYHNKRD_fake_script)()
+local function MZKX_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local plr = game.Players.LocalPlayer
+		plr.PlayerGui.Avatar.Frame.ViewportFrame.PlayerViewmodel.Head.GUI.Frame.Badges.VIP.Visible = true
+		plr.Character.Head.GUI.Frame.Badges.VIP.Visible = true
+	end)
+end
+coroutine.wrap(MZKX_fake_script)()
+local function YPTOV_fake_script() -- TextButton_4.Hover 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	local color = script.Parent.TextColor3
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(149, 73, 255)
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = color
+	end)
+end
+coroutine.wrap(YPTOV_fake_script)()
+local function MHRACN_fake_script() -- TextButton_5.Hover 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	local color = script.Parent.TextColor3
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(149, 73, 255)
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = color
+	end)
+end
+coroutine.wrap(MHRACN_fake_script)()
+local function CNUYFVY_fake_script() -- TextButton_6.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_6)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in pairs(game.ReplicatedStorage.Animations:GetDescendants()) do
+			if v.VIP then
+				v.Value = false
+			end
+		end
+		--	game.ReplicatedStorage.Animations.Wandinha.VIP.Value = false
+		--	game.ReplicatedStorage.Animations.BIZCOCHITO.VIP.Value = false
+	end)
+end
+coroutine.wrap(CNUYFVY_fake_script)()
+local function FRJJND_fake_script() -- TextButton_6.Hover 
+	local script = Instance.new('LocalScript', TextButton_6)
+
+	local color = script.Parent.TextColor3
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(149, 73, 255)
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = color
+	end)
+end
+coroutine.wrap(FRJJND_fake_script)()
+local function IIBBRE_fake_script() -- TextButton_7.Hover 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	local color = script.Parent.TextColor3
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(149, 73, 255)
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = color
+	end)
+end
+coroutine.wrap(IIBBRE_fake_script)()
+local function HALTIC_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local value = script.Parent.Parent.VelocidadeM.TextBox.Text
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+
+		humanoid.WalkSpeed = value
+	end)
+
+end
+coroutine.wrap(HALTIC_fake_script)()
+local function TTWNB_fake_script() -- TextButton_8.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_8)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local value = script.Parent.Parent.JumppowerM.TextBox.Text
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+
+		humanoid.JumpPower = value
+	end)
+
+end
+coroutine.wrap(TTWNB_fake_script)()
+local function YUAY_fake_script() -- TextButton_8.Hover 
+	local script = Instance.new('LocalScript', TextButton_8)
+
+	local color = script.Parent.TextColor3
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(149, 73, 255)
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = color
+	end)
+end
+coroutine.wrap(YUAY_fake_script)()
+local function IDZYL_fake_script() -- Principal_2.LocalScript 
+	local script = Instance.new('LocalScript', Principal_2)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		for i,v in pairs(script.Parent.Parent:GetChildren()) do
+			v.BorderSizePixel = 0
+			script.Parent.BorderSizePixel = 2
+		end
+		local name = script.Parent.Name
+		for i,v in pairs(script.Parent.Parent.Parent:GetChildren()) do
+			v.Visible = false
+			if v.Name == "Lista" then
+				v.Visible = true
+			end
+			local z = script.Parent.Parent.Parent:WaitForChild(name)
+			z.Visible = true
+		end
+	end)
+end
+coroutine.wrap(IDZYL_fake_script)()
+local function OYBMMR_fake_script() -- VIP_2.LocalScript 
+	local script = Instance.new('LocalScript', VIP_2)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		for i,v in pairs(script.Parent.Parent:GetChildren()) do
+			v.BorderSizePixel = 0
+			script.Parent.BorderSizePixel = 2
+		end
+		local name = script.Parent.Name
+		for i,v in pairs(script.Parent.Parent.Parent:GetChildren()) do
+			v.Visible = false
+			if v.Name == "Lista" then
+				v.Visible = true
+			end
+			local z = script.Parent.Parent.Parent:WaitForChild(name)
+			z.Visible = true
+		end
+	end)
+end
+coroutine.wrap(OYBMMR_fake_script)()
+local function YKMNTP_fake_script() -- Avatar_2.LocalScript 
+	local script = Instance.new('LocalScript', Avatar_2)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		for i,v in pairs(script.Parent.Parent:GetChildren()) do
+			v.BorderSizePixel = 0
+			script.Parent.BorderSizePixel = 2
+		end
+		local name = script.Parent.Name
+		for i,v in pairs(script.Parent.Parent.Parent:GetChildren()) do
+			v.Visible = false
+			if v.Name == "Lista" then
+				v.Visible = true
+			end
+			local z = script.Parent.Parent.Parent:WaitForChild(name)
+			z.Visible = true
+		end
+	end)
+end
+coroutine.wrap(YKMNTP_fake_script)()
+local function NCRICNZ_fake_script() -- Players.LocalScript 
+	local script = Instance.new('LocalScript', Players)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		for i,v in pairs(script.Parent.Parent:GetChildren()) do
+			v.BorderSizePixel = 0
+			script.Parent.BorderSizePixel = 2
+		end
+		local name = script.Parent.Name
+		for i,v in pairs(script.Parent.Parent.Parent:GetChildren()) do
+			v.Visible = false
+			if v.Name == "Lista" then
+				v.Visible = true
+			end
+			local z = script.Parent.Parent.Parent:WaitForChild(name)
+			z.Visible = true
+		end
+	end)
+end
+coroutine.wrap(NCRICNZ_fake_script)()
+local function DWXY_fake_script() -- TextButton_9.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_9)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local HumanoidRP = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+		local text = script.Parent.Parent.Parent.plrname.realplrname.Value
+		local plr = game.Players:FindFirstChild(text)
+		if plr then
+			local plrHRP = plr.Character:FindFirstChild("HumanoidRootPart")
+			if plrHRP then
+				if HumanoidRP then
+					HumanoidRP.Position = workspace.testeplayer.Position
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(DWXY_fake_script)()
+local function UGIP_fake_script() -- TextButton_9.Hover 
+	local script = Instance.new('LocalScript', TextButton_9)
+
+	local color = script.Parent.TextColor3
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(149, 73, 255)
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = color
+	end)
+end
+coroutine.wrap(UGIP_fake_script)()
+local function GZQERH_fake_script() -- TextButton_10.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_10)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local HumanoidRP = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+		local text = script.Parent.Parent.Parent.plrname.realplrname.Value
+		local plr = game.Players:FindFirstChild(text)
+		if plr then
+			local plrHRP = plr.Character:FindFirstChild("HumanoidRootPart")
+			if plrHRP then
+				if HumanoidRP then
+					if script.Parent.Parent.OnOff.ImageColor3 == Color3.fromRGB(255, 0, 0) then
+						script.Parent.Parent.OnOff.ImageColor3 = Color3.fromRGB(0, 255, 0)
+						repeat
+							HumanoidRP.Position = workspace.testeplayer.Position
+							task.wait()
+						until script.Parent.Parent.OnOff.ImageColor3 == Color3.fromRGB(255, 0, 0)
+					else
+						script.Parent.Parent.OnOff.ImageColor3 = Color3.fromRGB(255, 0, 0)
+					end
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(GZQERH_fake_script)()
+local function EAZSWG_fake_script() -- TextButton_10.Hover 
+	local script = Instance.new('LocalScript', TextButton_10)
+
+	local color = script.Parent.TextColor3
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(149, 73, 255)
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = color
+	end)
+end
+coroutine.wrap(EAZSWG_fake_script)()
+local function MJSAVI_fake_script() -- Players_2.LocalScript 
+	local script = Instance.new('LocalScript', Players_2)
+
+	script.Parent.Funcao.TextBox.Changed:Connect(function()
+		local search = string.lower(script.Parent.Funcao.TextBox.Text)
+		for i,v in pairs(game.Players:GetPlayers()) do
+			if search ~= "" then
+				local displayname = string.lower(v.DisplayName)
+				local name = string.lower(v.Name)
+				if string.find(displayname, search) then
+					script.Parent.plrname.TextLabel.Text = v.DisplayName.." (@"..v.Name..")"
+					script.Parent.plrname.realplrname.Value = v.Name
+					game.ReplicatedStorage.Selecionar.Adornee = v.Character
+					task.wait(5)
+					game.ReplicatedStorage.Selecionar.Adornee = game.ServerScriptService
+				elseif string.find(name, search) then
+					script.Parent.plrname.TextLabel.Text = v.DisplayName.." (@"..v.Name..")"
+					script.Parent.plrname.realplrname.Value = v.Name
+					game.ReplicatedStorage.Selecionar.Adornee = v.Character
+					task.wait(5)
+					game.ReplicatedStorage.Selecionar.Adornee = game.ServerScriptService
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(MJSAVI_fake_script)()
+local function RVGK_fake_script() -- Frame.KeyBinds 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService("UserInputService")
+
+	UIS.InputBegan:Connect(function(input)
+		if input.KeyCode == Enum.KeyCode.RightControl then
+			script.Parent.Visible = not script.Parent.Visible
+		end
+		if input.KeyCode == Enum.KeyCode.T then
+			local HumanoidRP = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+			local text = script.Parent.Menu.Players.plrname.realplrname.Value
+			local plr = game.Players:FindFirstChild(text)
+			if plr then
+				local plrHRP = plr.Character:FindFirstChild("HumanoidRootPart")
+				if plrHRP then
+					if HumanoidRP then
+						HumanoidRP.Position = workspace.testeplayer.Position
+					end
+				end
+			end
+		end
+		if input.KeyCode == Enum.KeyCode.U then
+			local HumanoidRP = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+			local text = script.Parent.Menu.Players.plrname.realplrname.Value
+			local plr = game.Players:FindFirstChild(text)
+			if plr then
+				local plrHRP = plr.Character:FindFirstChild("HumanoidRootPart")
+				if plrHRP then
+					if HumanoidRP then
+						if script.Parent.Menu.Players.looptp.OnOff.ImageColor3 == Color3.fromRGB(255, 0, 0) then
+							script.Parent.Menu.Players.looptp.OnOff.ImageColor3 = Color3.fromRGB(0, 255, 0)
+							repeat
+								HumanoidRP.Position = workspace.testeplayer.Position
+								task.wait()
+							until script.Parent.Menu.Players.looptp.OnOff.ImageColor3 == Color3.fromRGB(255, 0, 0)
+						else
+							script.Parent.Menu.Players.looptp.OnOff.ImageColor3 = Color3.fromRGB(255, 0, 0)
+						end
+					end
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(RVGK_fake_script)()
+local function FXWGY_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(FXWGY_fake_script)()
+local function HYKGKCS_fake_script() -- ImageButton.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent:TweenPosition(UDim2.new(0.386, 0,0, -150),
+			Enum.EasingDirection.In,
+			Enum.EasingStyle.Quart,
+			0.5
+		)
+		wait(.5)
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(HYKGKCS_fake_script)()
+local function JNCH_fake_script() -- ImageButton_2.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton_2)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(JNCH_fake_script)()
+local function CEPB_fake_script() -- ImageButton_3.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton_3)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent:TweenPosition(UDim2.new(0.386, 0,0, -150),
+			Enum.EasingDirection.In,
+			Enum.EasingStyle.Quart,
+			0.5
+		)
+		wait(.5)
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(CEPB_fake_script)()
+local function TJUCVM_fake_script() -- TTDhub.LocalScript 
+	local script = Instance.new('LocalScript', TTDhub)
+
+	local soundgroup = Instance.new("SoundGroup", game.SoundService)
+	soundgroup.Volume = 1
+	soundgroup.Name = "NotifyGroup"
+	local sound = Instance.new("Sound", soundgroup)
+	sound.SoundId = "rbxassetid://1862045322"
+	sound.Volume = 1
+	sound.Name = "Notify"
+	-- para tocar a notifacao digite sound:Play()
+	local selecionar = Instance.new("Highlight", game.ReplicatedStorage)
+	selecionar.Name = "Selecionar"
+	selecionar.OutlineColor = Color3.fromRGB(0, 200, 255)
+	selecionar.FillTransparency = 1
+	selecionar.Adornee = workspace.ProPlayernaAk1
+
+	local ts = game:GetService("TweenService")
+	local ti = TweenInfo.new(
+		1,
+		Enum.EasingStyle.Linear,
+		Enum.EasingDirection.In,
+		-1,
+		true,
+		0
+	)
+	ts:Create(
+		selecionar,
+		ti,
+		{OutlineColor = Color3.fromRGB(255, 255, 255)}
+	):Play()
+	local realplrname = Instance.new(
+		"StringValue",script.Parent.Frame.Menu.Players.plrname
+	)
+	realplrname.Name = "realplrname"
+
+end
+coroutine.wrap(TJUCVM_fake_script)()
+local function LYWJO_fake_script() -- AberturaESB.LocalScript 
 	local script = Instance.new('LocalScript', AberturaESB)
 
 	local frame = script.Parent.Frame
@@ -856,8 +1351,8 @@ local function NUHKXKE_fake_script() -- AberturaESB.LocalScript
 	local esb7 = frame.ESB7
 	local esb8 = frame.ESB8
 	local frameclear = script.Parent.Frame.Frameclear
-	
-	
+
+
 	frame.Visible = true
 	frame:TweenSize(UDim2.new(0,250,0,250),
 		Enum.EasingDirection.Out,
@@ -968,427 +1463,6 @@ local function NUHKXKE_fake_script() -- AberturaESB.LocalScript
 	Frame.Visible = true -- vai plg
 	-------
 	script.Parent:Destroy()
-	
-end
-coroutine.wrap(NUHKXKE_fake_script)()
-local function WKUOCA_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
 
-	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Menu.Visible = not script.Parent.Parent.Menu.Visible
-	end)
 end
-coroutine.wrap(WKUOCA_fake_script)()
-local function QBNVZ_fake_script() -- TextLabel_2.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel_2)
-
-	local plrname = game.Players.LocalPlayer.DisplayName
-	
-	script.Parent.Text = "Olá, "..plrname
-end
-coroutine.wrap(QBNVZ_fake_script)()
-local function RRDR_fake_script() -- TextButton_2.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_2)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		local notify = script.Parent.Parent.Parent.Parent.Parent.Parent.NotificacaoFechar
-		notify.Visible = true
-		sound:Play()
-		notify:TweenPosition(UDim2.new(0.386, 0,0.014, 0),
-			Enum.EasingDirection.In,
-			Enum.EasingStyle.Quart,
-			0.5
-		)
-	end)
-end
-coroutine.wrap(RRDR_fake_script)()
-local function CHABY_fake_script() -- TextButton_2.Hover 
-	local script = Instance.new('LocalScript', TextButton_2)
-
-	local color = script.Parent.TextColor3
-	
-	script.Parent.MouseEnter:Connect(function()
-		script.Parent.TextColor3 = Color3.fromRGB(149, 73, 255)
-	end)
-	script.Parent.MouseLeave:Connect(function()
-		script.Parent.TextColor3 = color
-	end)
-end
-coroutine.wrap(CHABY_fake_script)()
-local function TDQF_fake_script() -- TextButton_3.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_3)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
-	end)
-end
-coroutine.wrap(TDQF_fake_script)()
-local function FKATOMI_fake_script() -- TextButton_3.Hover 
-	local script = Instance.new('LocalScript', TextButton_3)
-
-	local color = script.Parent.TextColor3
-	
-	script.Parent.MouseEnter:Connect(function()
-		script.Parent.TextColor3 = Color3.fromRGB(149, 73, 255)
-	end)
-	script.Parent.MouseLeave:Connect(function()
-		script.Parent.TextColor3 = color
-	end)
-end
-coroutine.wrap(FKATOMI_fake_script)()
-local function FVHP_fake_script() -- TextButton_4.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_4)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		local plr = game.Players.LocalPlayer
-		plr.PlayerGui.Avatar.Frame.ViewportFrame.PlayerViewmodel.Head.GUI.Frame.Badges.VIP.Visible = true
-		plr.Character.Head.GUI.Frame.Badges.VIP.Visible = true
-	end)
-end
-coroutine.wrap(FVHP_fake_script)()
-local function KRJA_fake_script() -- TextButton_6.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_6)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		for i,v in pairs(game.ReplicatedStorage.Animations:GetDescendants()) do
-			if v.VIP then
-				v.Value = false
-			end
-		end
-	--	game.ReplicatedStorage.Animations.Wandinha.VIP.Value = false
-	--	game.ReplicatedStorage.Animations.BIZCOCHITO.VIP.Value = false
-	end)
-end
-coroutine.wrap(KRJA_fake_script)()
-local function GFJL_fake_script() -- TextButton_7.Hover 
-	local script = Instance.new('LocalScript', TextButton_7)
-
-	local color = script.Parent.TextColor3
-	
-	script.Parent.MouseEnter:Connect(function()
-		script.Parent.TextColor3 = Color3.fromRGB(149, 73, 255)
-	end)
-	script.Parent.MouseLeave:Connect(function()
-		script.Parent.TextColor3 = color
-	end)
-end
-coroutine.wrap(GFJL_fake_script)()
-local function CRUAK_fake_script() -- TextButton_7.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_7)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		local value = script.Parent.Parent.VelocidadeM.TextBox.Text
-		local humanoid = game.Players.LocalPlayer.Character.Humanoid
-	
-		humanoid.WalkSpeed = value
-	end)
-	
-end
-coroutine.wrap(CRUAK_fake_script)()
-local function EUBGMWP_fake_script() -- TextButton_8.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_8)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		local value = script.Parent.Parent.JumppowerM.TextBox.Text
-		local humanoid = game.Players.LocalPlayer.Character.Humanoid
-		
-		humanoid.JumpPower = value
-	end)
-	
-end
-coroutine.wrap(EUBGMWP_fake_script)()
-local function QBWLL_fake_script() -- TextButton_8.Hover 
-	local script = Instance.new('LocalScript', TextButton_8)
-
-	local color = script.Parent.TextColor3
-	
-	script.Parent.MouseEnter:Connect(function()
-		script.Parent.TextColor3 = Color3.fromRGB(149, 73, 255)
-	end)
-	script.Parent.MouseLeave:Connect(function()
-		script.Parent.TextColor3 = color
-	end)
-end
-coroutine.wrap(QBWLL_fake_script)()
-local function EYCIOB_fake_script() -- Principal_2.LocalScript 
-	local script = Instance.new('LocalScript', Principal_2)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		for i,v in pairs(script.Parent.Parent:GetChildren()) do
-			v.BorderSizePixel = 0
-			script.Parent.BorderSizePixel = 2
-		end
-		local name = script.Parent.Name
-		for i,v in pairs(script.Parent.Parent.Parent:GetChildren()) do
-			v.Visible = false
-			if v.Name == "Lista" then
-				v.Visible = true
-			end
-			local z = script.Parent.Parent.Parent:WaitForChild(name)
-			z.Visible = true
-		end
-	end)
-end
-coroutine.wrap(EYCIOB_fake_script)()
-local function AEKU_fake_script() -- VIP_2.LocalScript 
-	local script = Instance.new('LocalScript', VIP_2)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		for i,v in pairs(script.Parent.Parent:GetChildren()) do
-			v.BorderSizePixel = 0
-			script.Parent.BorderSizePixel = 2
-		end
-		local name = script.Parent.Name
-		for i,v in pairs(script.Parent.Parent.Parent:GetChildren()) do
-			v.Visible = false
-			if v.Name == "Lista" then
-				v.Visible = true
-			end
-			local z = script.Parent.Parent.Parent:WaitForChild(name)
-			z.Visible = true
-		end
-	end)
-end
-coroutine.wrap(AEKU_fake_script)()
-local function WNCWBM_fake_script() -- Avatar_2.LocalScript 
-	local script = Instance.new('LocalScript', Avatar_2)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		for i,v in pairs(script.Parent.Parent:GetChildren()) do
-			v.BorderSizePixel = 0
-			script.Parent.BorderSizePixel = 2
-		end
-		local name = script.Parent.Name
-		for i,v in pairs(script.Parent.Parent.Parent:GetChildren()) do
-			v.Visible = false
-			if v.Name == "Lista" then
-				v.Visible = true
-			end
-			local z = script.Parent.Parent.Parent:WaitForChild(name)
-			z.Visible = true
-		end
-	end)
-end
-coroutine.wrap(WNCWBM_fake_script)()
-local function ZWSPZP_fake_script() -- Players.LocalScript 
-	local script = Instance.new('LocalScript', Players)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		for i,v in pairs(script.Parent.Parent:GetChildren()) do
-			v.BorderSizePixel = 0
-			script.Parent.BorderSizePixel = 2
-		end
-		local name = script.Parent.Name
-		for i,v in pairs(script.Parent.Parent.Parent:GetChildren()) do
-			v.Visible = false
-			if v.Name == "Lista" then
-				v.Visible = true
-			end
-			local z = script.Parent.Parent.Parent:WaitForChild(name)
-			z.Visible = true
-		end
-	end)
-end
-coroutine.wrap(ZWSPZP_fake_script)()
-local function MKSZPK_fake_script() -- TextButton_9.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_9)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		local HumanoidRP = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
-		local text = script.Parent.Parent.Parent.plrname.realplrname.Value
-		local plr = game.Players:FindFirstChild(text)
-		if plr then
-			local plrHRP = plr.Character:FindFirstChild("HumanoidRootPart")
-			if plrHRP then
-				if HumanoidRP then
-					if script.Parent.Parent.OnOff.ImageColor3 == Color3.fromRGB(255, 0, 0) then
-						script.Parent.Parent.OnOff.ImageColor3 = Color3.fromRGB(0, 255, 0)
-						repeat
-							HumanoidRP.Position = plrHRP.Position
-							task.wait()
-						until script.Parent.Parent.OnOff.ImageColor3 == Color3.fromRGB(255, 0, 0)
-					else
-						script.Parent.Parent.OnOff.ImageColor3 = Color3.fromRGB(255, 0, 0)
-					end
-				end
-			end
-		end
-	end)
-end
-coroutine.wrap(MKSZPK_fake_script)()
-local function MBOBV_fake_script() -- TextButton_9.Hover 
-	local script = Instance.new('LocalScript', TextButton_9)
-
-	local color = script.Parent.TextColor3
-	
-	script.Parent.MouseEnter:Connect(function()
-		script.Parent.TextColor3 = Color3.fromRGB(149, 73, 255)
-	end)
-	script.Parent.MouseLeave:Connect(function()
-		script.Parent.TextColor3 = color
-	end)
-end
-coroutine.wrap(MBOBV_fake_script)()
-local function DPYOEPZ_fake_script() -- TextButton_10.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_10)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		
-	end)
-end
-coroutine.wrap(DPYOEPZ_fake_script)()
-local function JLGVCD_fake_script() -- TextButton_10.Hover 
-	local script = Instance.new('LocalScript', TextButton_10)
-
-	local color = script.Parent.TextColor3
-	
-	script.Parent.MouseEnter:Connect(function()
-		script.Parent.TextColor3 = Color3.fromRGB(149, 73, 255)
-	end)
-	script.Parent.MouseLeave:Connect(function()
-		script.Parent.TextColor3 = color
-	end)
-end
-coroutine.wrap(JLGVCD_fake_script)()
-local function KKZNV_fake_script() -- Players_2.LocalScript 
-	local script = Instance.new('LocalScript', Players_2)
-
-	script.Parent.Funcao.TextBox.Changed:Connect(function()
-		local search = string.lower(script.Parent.Funcao.TextBox.Text)
-		for i,v in pairs(game.Players:GetPlayers()) do
-			if search ~= "" then
-				local displayname = string.lower(v.DisplayName)
-				local name = string.lower(v.Name)
-				if string.find(displayname, search) then
-					script.Parent.plrname.TextLabel.Text = v.DisplayName.." (@"..v.Name..")"
-					script.Parent.plrname.realplrname.Value = v.Name
-				elseif string.find(name, search) then
-					script.Parent.plrname.TextLabel.Text = v.DisplayName.." (@"..v.Name..")"
-					script.Parent.plrname.realplrname.Value = v.Name
-				end
-			end
-		end
-	end)
-end
-coroutine.wrap(KKZNV_fake_script)()
-local function XKEYL_fake_script() -- Frame_2.KeyBinds 
-	local script = Instance.new('LocalScript', Frame_2)
-
-	local UIS = game:GetService("UserInputService")
-	
-	UIS.InputBegan:Connect(function(input)
-		if input.KeyCode == Enum.KeyCode.RightControl then
-			script.Parent.Visible = not script.Parent.Visible
-		end
-		if input.KeyCode == Enum.KeyCode.T then
-			local HumanoidRP = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
-			local text = script.Parent.Menu.Players.plrname.realplrname.Value
-			local plr = game.Players:FindFirstChild(text)
-			if plr then
-				local plrHRP = plr.Character:FindFirstChild("HumanoidRootPart")
-				if plrHRP then
-					if HumanoidRP then
-						HumanoidRP.Position = plrHRP.Position
-					end
-				end
-			end
-		end
-		if input.KeyCode == Enum.KeyCode.U then
-			local HumanoidRP = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
-			local text = script.Parent.Menu.Players.plrname.realplrname.Value
-			local plr = game.Players:FindFirstChild(text)
-			if plr then
-				local plrHRP = plr.Character:FindFirstChild("HumanoidRootPart")
-				if plrHRP then
-					if HumanoidRP then
-						if script.Parent.Menu.Players.looptp.OnOff.ImageColor3 == Color3.fromRGB(255, 0, 0) then
-							script.Parent.Menu.Players.looptp.OnOff.ImageColor3 = Color3.fromRGB(0, 255, 0)
-							repeat
-								HumanoidRP.Position = plrHRP.Position
-								task.wait()
-							until script.Parent.Menu.Players.looptp.OnOff.ImageColor3 == Color3.fromRGB(255, 0, 0)
-						else
-							script.Parent.Menu.Players.looptp.OnOff.ImageColor3 = Color3.fromRGB(255, 0, 0)
-						end
-					end
-				end
-			end
-		end
-	end)
-end
-coroutine.wrap(XKEYL_fake_script)()
-local function PTNTC_fake_script() -- Frame_2.LocalScript 
-	local script = Instance.new('LocalScript', Frame_2)
-
-	local UIS = game:GetService('UserInputService')
-	local frame = script.Parent
-	local dragToggle = nil
-	local dragSpeed = 0.25
-	local dragStart = nil
-	local startPos = nil
-	
-	local function updateInput(input)
-		local delta = input.Position - dragStart
-		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
-			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
-	end
-	
-	frame.InputBegan:Connect(function(input)
-		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
-			dragToggle = true
-			dragStart = input.Position
-			startPos = frame.Position
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragToggle = false
-				end
-			end)
-		end
-	end)
-	
-	UIS.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			if dragToggle then
-				updateInput(input)
-			end
-		end
-	end)
-end
-coroutine.wrap(PTNTC_fake_script)()
-local function OHIO_fake_script() -- ImageButton.LocalScript 
-	local script = Instance.new('LocalScript', ImageButton)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.Parent:TweenPosition(UDim2.new(0.386, 0,0, -150),
-			Enum.EasingDirection.In,
-			Enum.EasingStyle.Quart,
-			0.5
-		)
-		wait(.5)
-		script.Parent.Parent.Visible = false
-	end)
-end
-coroutine.wrap(OHIO_fake_script)()
-local function RSCY_fake_script() -- ImageButton_2.LocalScript 
-	local script = Instance.new('LocalScript', ImageButton_2)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.Parent.Parent:Destroy()
-	end)
-end
-coroutine.wrap(RSCY_fake_script)()
-local function XLSJXQ_fake_script() -- ImageButton_3.LocalScript 
-	local script = Instance.new('LocalScript', ImageButton_3)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		script.Parent.Parent:TweenPosition(UDim2.new(0.386, 0,0, -150),
-			Enum.EasingDirection.In,
-			Enum.EasingStyle.Quart,
-			0.5
-		)
-		wait(.5)
-		script.Parent.Parent.Visible = false
-	end)
-end
-coroutine.wrap(XLSJXQ_fake_script)()
+coroutine.wrap(LYWJO_fake_script)()
