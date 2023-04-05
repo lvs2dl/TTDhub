@@ -1,7 +1,28 @@
--- ESB remember, never give up
+-- ESB entre!
 
-local TTDhub = Instance.new("ScreenGui")
+-- total creditos: Gui to Lua 
+-- (Plugin Roblox Studio)
+
+-- Instances:
+
+local AberturaESB = Instance.new("ScreenGui")
+local Frameold = Instance.new("Frame")
+local ESB1 = Instance.new("ImageLabel")
+local ESB2 = Instance.new("ImageLabel")
+local ESB3 = Instance.new("ImageLabel")
+local ESB4 = Instance.new("ImageLabel")
+local ESB5 = Instance.new("ImageLabel")
+local ESB6 = Instance.new("ImageLabel")
+local ESB7 = Instance.new("ImageLabel")
+local ESB8 = Instance.new("ImageLabel")
+local ESB = Instance.new("ImageLabel")
+local Frameclear = Instance.new("Frame")
 local Frame = Instance.new("Frame")
+local ESB_2 = Instance.new("ImageLabel")
+local Frameclear_2 = Instance.new("Frame")
+local ESBtexto = Instance.new("ImageLabel")
+local TTDhub = Instance.new("ScreenGui")
+local Frame_2 = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
 local Menu = Instance.new("Frame")
@@ -37,6 +58,7 @@ local Principal_2 = Instance.new("TextButton")
 local VIP_2 = Instance.new("TextButton")
 local Avatar_2 = Instance.new("TextButton")
 local Players = Instance.new("TextButton")
+local Configs = Instance.new("TextButton")
 local Players_2 = Instance.new("ScrollingFrame")
 local tp = Instance.new("ImageLabel")
 local TextButton_9 = Instance.new("TextButton")
@@ -47,43 +69,167 @@ local plrname = Instance.new("ImageLabel")
 local TextLabel_5 = Instance.new("TextLabel")
 local Funcao_7 = Instance.new("ImageLabel")
 local TextBox_3 = Instance.new("TextBox")
-local NotificacaoFechar = Instance.new("ImageLabel")
+local Configs_2 = Instance.new("ScrollingFrame")
+local configop = Instance.new("ImageLabel")
+local TextButton_11 = Instance.new("TextButton")
 local TextLabel_6 = Instance.new("TextLabel")
+local NotificacaoFechar = Instance.new("ImageLabel")
+local TextLabel_7 = Instance.new("TextLabel")
 local Notitxt = Instance.new("TextLabel")
 local ImageButton = Instance.new("ImageButton")
-local TextLabel_7 = Instance.new("TextLabel")
-local ImageButton_2 = Instance.new("ImageButton")
 local TextLabel_8 = Instance.new("TextLabel")
-local Notificacao = Instance.new("ImageLabel")
+local ImageButton_2 = Instance.new("ImageButton")
 local TextLabel_9 = Instance.new("TextLabel")
+local Notificacao = Instance.new("ImageLabel")
+local TextLabel_10 = Instance.new("TextLabel")
 local Notitxt_2 = Instance.new("TextLabel")
 local ImageButton_3 = Instance.new("ImageButton")
-local AberturaESB = Instance.new("ScreenGui")
-local Frame_2 = Instance.new("Frame")
-local ESB1 = Instance.new("ImageLabel")
-local ESB2 = Instance.new("ImageLabel")
-local ESB3 = Instance.new("ImageLabel")
-local ESB4 = Instance.new("ImageLabel")
-local ESB5 = Instance.new("ImageLabel")
-local ESB6 = Instance.new("ImageLabel")
-local ESB7 = Instance.new("ImageLabel")
-local ESB8 = Instance.new("ImageLabel")
-local ESB = Instance.new("ImageLabel")
-local Frameclear = Instance.new("Frame")
+
+--Properties:
+
+AberturaESB.Name = "AberturaESB"
+AberturaESB.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+AberturaESB.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frameold.Name = "Frameold"
+Frameold.Parent = AberturaESB
+Frameold.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frameold.BorderSizePixel = 0
+Frameold.Position = UDim2.new(0.386834979, 0, 0.276292324, 0)
+Frameold.Visible = false
+
+ESB1.Name = "ESB1"
+ESB1.Parent = Frameold
+ESB1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESB1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESB1.BorderSizePixel = 0
+ESB1.Size = UDim2.new(1, 0, 1, 0)
+ESB1.Image = "http://www.roblox.com/asset/?id=12716765667"
+
+ESB2.Name = "ESB2"
+ESB2.Parent = Frameold
+ESB2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESB2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESB2.BorderSizePixel = 0
+ESB2.Size = UDim2.new(1, 0, 1, 0)
+ESB2.Visible = false
+ESB2.Image = "http://www.roblox.com/asset/?id=12716766581"
+
+ESB3.Name = "ESB3"
+ESB3.Parent = Frameold
+ESB3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESB3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESB3.BorderSizePixel = 0
+ESB3.Size = UDim2.new(1, 0, 1, 0)
+ESB3.Visible = false
+ESB3.Image = "http://www.roblox.com/asset/?id=12716767441"
+
+ESB4.Name = "ESB4"
+ESB4.Parent = Frameold
+ESB4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESB4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESB4.BorderSizePixel = 0
+ESB4.Size = UDim2.new(1, 0, 1, 0)
+ESB4.Visible = false
+ESB4.Image = "http://www.roblox.com/asset/?id=12716768289"
+
+ESB5.Name = "ESB5"
+ESB5.Parent = Frameold
+ESB5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESB5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESB5.BorderSizePixel = 0
+ESB5.Size = UDim2.new(1, 0, 1, 0)
+ESB5.Visible = false
+ESB5.Image = "http://www.roblox.com/asset/?id=12716769250"
+
+ESB6.Name = "ESB6"
+ESB6.Parent = Frameold
+ESB6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESB6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESB6.BorderSizePixel = 0
+ESB6.Size = UDim2.new(1, 0, 1, 0)
+ESB6.Visible = false
+ESB6.Image = "http://www.roblox.com/asset/?id=12716802770"
+
+ESB7.Name = "ESB7"
+ESB7.Parent = Frameold
+ESB7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESB7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESB7.BorderSizePixel = 0
+ESB7.Size = UDim2.new(1, 0, 1, 0)
+ESB7.Visible = false
+ESB7.Image = "http://www.roblox.com/asset/?id=12716804112"
+
+ESB8.Name = "ESB8"
+ESB8.Parent = Frameold
+ESB8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESB8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESB8.BorderSizePixel = 0
+ESB8.Size = UDim2.new(1, 0, 1, 0)
+ESB8.Visible = false
+ESB8.Image = "http://www.roblox.com/asset/?id=12716805335"
+
+ESB.Name = "ESB"
+ESB.Parent = Frameold
+ESB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESB.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESB.BorderSizePixel = 0
+ESB.Size = UDim2.new(1, 0, 1, 0)
+ESB.Visible = false
+ESB.Image = "http://www.roblox.com/asset/?id=12716855342"
+
+Frameclear.Name = "Frameclear"
+Frameclear.Parent = Frameold
+Frameclear.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Frameclear.BorderSizePixel = 0
+Frameclear.Size = UDim2.new(1, 0, 0, 0)
+Frameclear.Visible = false
+
+Frame.Parent = AberturaESB
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.386834979, 0, 0.276292324, 0)
+Frame.Visible = false
+
+ESB_2.Name = "ESB"
+ESB_2.Parent = Frame
+ESB_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESB_2.BackgroundTransparency = 1.000
+ESB_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESB_2.BorderSizePixel = 0
+ESB_2.Size = UDim2.new(1, 0, 1, 0)
+ESB_2.Image = "http://www.roblox.com/asset/?id=12953948788"
+
+Frameclear_2.Name = "Frameclear"
+Frameclear_2.Parent = Frame
+Frameclear_2.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Frameclear_2.BorderSizePixel = 0
+Frameclear_2.Size = UDim2.new(1, 0, 0, 0)
+Frameclear_2.Visible = false
+
+ESBtexto.Name = "ESBtexto"
+ESBtexto.Parent = Frame
+ESBtexto.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESBtexto.BackgroundTransparency = 1.000
+ESBtexto.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ESBtexto.BorderSizePixel = 0
+ESBtexto.Size = UDim2.new(1, 0, 1, 0)
+ESBtexto.Image = "http://www.roblox.com/asset/?id=12953953040"
 
 TTDhub.Name = "TTDhub"
 TTDhub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 TTDhub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 TTDhub.ResetOnSpawn = false
 
-Frame.Parent = TTDhub
-Frame.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.0391290784, 261, 0.51908648, -136)
-Frame.Size = UDim2.new(0, 500, 0, 20)
-Frame.Visible = false
+Frame_2.Parent = TTDhub
+Frame_2.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.0391290784, 261, 0.51908648, -136)
+Frame_2.Size = UDim2.new(0, 500, 0, 20)
+Frame_2.Visible = false
 
-TextButton.Parent = Frame
+TextButton.Parent = Frame_2
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.BackgroundTransparency = 1.000
 TextButton.Position = UDim2.new(0.956228137, 0, 0, 0)
@@ -95,7 +241,7 @@ TextButton.TextColor3 = Color3.fromRGB(149, 73, 255)
 TextButton.TextSize = 30.000
 TextButton.TextWrapped = true
 
-TextLabel.Parent = Frame
+TextLabel.Parent = Frame_2
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.Size = UDim2.new(0.201206252, 0, 1.00000012, 0)
@@ -107,7 +253,7 @@ TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
 Menu.Name = "Menu"
-Menu.Parent = Frame
+Menu.Parent = Frame_2
 Menu.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
 Menu.BorderSizePixel = 0
 Menu.Position = UDim2.new(0.00015197754, 0, 0.981550574, 0)
@@ -488,6 +634,20 @@ Players.TextScaled = true
 Players.TextSize = 14.000
 Players.TextWrapped = true
 
+Configs.Name = "Configs"
+Configs.Parent = Lista
+Configs.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+Configs.BorderColor3 = Color3.fromRGB(149, 73, 255)
+Configs.BorderSizePixel = 0
+Configs.Position = UDim2.new(0.100000001, 0, 0.433092147, 0)
+Configs.Size = UDim2.new(0, 80, 0, 30)
+Configs.Font = Enum.Font.SourceSansBold
+Configs.Text = "Configs"
+Configs.TextColor3 = Color3.fromRGB(255, 255, 255)
+Configs.TextScaled = true
+Configs.TextSize = 14.000
+Configs.TextWrapped = true
+
 Players_2.Name = "Players"
 Players_2.Parent = Menu
 Players_2.Active = true
@@ -603,6 +763,52 @@ TextBox_3.TextScaled = true
 TextBox_3.TextSize = 14.000
 TextBox_3.TextWrapped = true
 
+Configs_2.Name = "Configs"
+Configs_2.Parent = Menu
+Configs_2.Active = true
+Configs_2.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Configs_2.BorderSizePixel = 0
+Configs_2.Position = UDim2.new(0.20105426, 0, 0, 0)
+Configs_2.Size = UDim2.new(0, 399, 0, 270)
+Configs_2.Visible = false
+Configs_2.ScrollBarThickness = 10
+
+configop.Name = "configop"
+configop.Parent = Configs_2
+configop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+configop.BackgroundTransparency = 1.000
+configop.Position = UDim2.new(0.0469999984, 0, 0.0370000005, 0)
+configop.Size = UDim2.new(0.59290719, 0, 0.0560000017, 0)
+configop.Image = "rbxassetid://3570695787"
+configop.ImageColor3 = Color3.fromRGB(31, 31, 31)
+configop.ScaleType = Enum.ScaleType.Slice
+configop.SliceCenter = Rect.new(100, 100, 100, 100)
+configop.SliceScale = 0.120
+
+TextButton_11.Parent = configop
+TextButton_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_11.BackgroundTransparency = 1.000
+TextButton_11.Position = UDim2.new(0.0349711478, 0, 0, 0)
+TextButton_11.Size = UDim2.new(0, 141, 0, 30)
+TextButton_11.Font = Enum.Font.SourceSansBold
+TextButton_11.Text = "Notificações:"
+TextButton_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_11.TextScaled = true
+TextButton_11.TextSize = 14.000
+TextButton_11.TextWrapped = true
+
+TextLabel_6.Parent = configop
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.630989373, 0, 0, 0)
+TextLabel_6.Size = UDim2.new(0, 86, 0, 30)
+TextLabel_6.Font = Enum.Font.SourceSansBold
+TextLabel_6.Text = "Todas"
+TextLabel_6.TextColor3 = Color3.fromRGB(149, 73, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
 NotificacaoFechar.Name = "NotificacaoFechar"
 NotificacaoFechar.Parent = TTDhub
 NotificacaoFechar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -616,17 +822,17 @@ NotificacaoFechar.ScaleType = Enum.ScaleType.Slice
 NotificacaoFechar.SliceCenter = Rect.new(100, 100, 100, 100)
 NotificacaoFechar.SliceScale = 0.120
 
-TextLabel_6.Parent = NotificacaoFechar
-TextLabel_6.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
-TextLabel_6.BackgroundTransparency = 1.000
-TextLabel_6.BorderSizePixel = 0
-TextLabel_6.Size = UDim2.new(1, 0, 0.273746699, 0)
-TextLabel_6.Font = Enum.Font.SourceSansBold
-TextLabel_6.Text = "Notificação"
-TextLabel_6.TextColor3 = Color3.fromRGB(149, 73, 255)
-TextLabel_6.TextScaled = true
-TextLabel_6.TextSize = 14.000
-TextLabel_6.TextWrapped = true
+TextLabel_7.Parent = NotificacaoFechar
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Size = UDim2.new(1, 0, 0.273746699, 0)
+TextLabel_7.Font = Enum.Font.SourceSansBold
+TextLabel_7.Text = "Notificação"
+TextLabel_7.TextColor3 = Color3.fromRGB(149, 73, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
 
 Notitxt.Name = "Notitxt"
 Notitxt.Parent = NotificacaoFechar
@@ -650,16 +856,16 @@ ImageButton.Size = UDim2.new(0, 38, 0, 38)
 ImageButton.Image = "rbxassetid://3570695787"
 ImageButton.ImageColor3 = Color3.fromRGB(255, 0, 0)
 
-TextLabel_7.Parent = ImageButton
-TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_7.BackgroundTransparency = 1.000
-TextLabel_7.Size = UDim2.new(0, 38, 0, 37)
-TextLabel_7.Font = Enum.Font.SourceSansBold
-TextLabel_7.Text = "X"
-TextLabel_7.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_7.TextScaled = true
-TextLabel_7.TextSize = 14.000
-TextLabel_7.TextWrapped = true
+TextLabel_8.Parent = ImageButton
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Size = UDim2.new(0, 38, 0, 37)
+TextLabel_8.Font = Enum.Font.SourceSansBold
+TextLabel_8.Text = "X"
+TextLabel_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
 
 ImageButton_2.Parent = NotificacaoFechar
 ImageButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -669,15 +875,15 @@ ImageButton_2.Size = UDim2.new(0, 38, 0, 38)
 ImageButton_2.Image = "rbxassetid://3570695787"
 ImageButton_2.ImageColor3 = Color3.fromRGB(0, 255, 0)
 
-TextLabel_8.Parent = ImageButton_2
-TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.BackgroundTransparency = 1.000
-TextLabel_8.Size = UDim2.new(0, 38, 0, 37)
-TextLabel_8.Font = Enum.Font.SourceSansBold
-TextLabel_8.Text = "✔"
-TextLabel_8.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_8.TextSize = 25.000
-TextLabel_8.TextWrapped = true
+TextLabel_9.Parent = ImageButton_2
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Size = UDim2.new(0, 38, 0, 37)
+TextLabel_9.Font = Enum.Font.SourceSansBold
+TextLabel_9.Text = "✔"
+TextLabel_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_9.TextSize = 25.000
+TextLabel_9.TextWrapped = true
 
 Notificacao.Name = "Notificacao"
 Notificacao.Parent = TTDhub
@@ -692,17 +898,17 @@ Notificacao.ScaleType = Enum.ScaleType.Slice
 Notificacao.SliceCenter = Rect.new(100, 100, 100, 100)
 Notificacao.SliceScale = 0.120
 
-TextLabel_9.Parent = Notificacao
-TextLabel_9.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
-TextLabel_9.BackgroundTransparency = 1.000
-TextLabel_9.BorderSizePixel = 0
-TextLabel_9.Size = UDim2.new(1, 0, 0.273746699, 0)
-TextLabel_9.Font = Enum.Font.SourceSansBold
-TextLabel_9.Text = "Notificação"
-TextLabel_9.TextColor3 = Color3.fromRGB(149, 73, 255)
-TextLabel_9.TextScaled = true
-TextLabel_9.TextSize = 14.000
-TextLabel_9.TextWrapped = true
+TextLabel_10.Parent = Notificacao
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Size = UDim2.new(1, 0, 0.273746699, 0)
+TextLabel_10.Font = Enum.Font.SourceSansBold
+TextLabel_10.Text = "Notificação"
+TextLabel_10.TextColor3 = Color3.fromRGB(149, 73, 255)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 14.000
+TextLabel_10.TextWrapped = true
 
 Notitxt_2.Name = "Notitxt"
 Notitxt_2.Parent = Notificacao
@@ -723,123 +929,68 @@ ImageButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageButton_3.BackgroundTransparency = 1.000
 ImageButton_3.Position = UDim2.new(0.895913541, 0, 0.0506688356, 0)
 ImageButton_3.Size = UDim2.new(0, 20, 0, 20)
+ImageButton_3.Visible = false
 ImageButton_3.Image = "rbxassetid://3570695787"
 ImageButton_3.ImageColor3 = Color3.fromRGB(255, 0, 0)
 
-AberturaESB.Name = "AberturaESB"
-AberturaESB.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-AberturaESB.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+-- Scripts:
 
-Frame_2.Parent = AberturaESB
-Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame_2.BorderSizePixel = 0
-Frame_2.Position = UDim2.new(0.386834979, 0, 0.276292324, 0)
-Frame_2.Visible = false
+local function UFJP_fake_script() -- AberturaESB.LocalScript 
+	local script = Instance.new('LocalScript', AberturaESB)
 
-ESB1.Name = "ESB1"
-ESB1.Parent = Frame_2
-ESB1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESB1.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESB1.BorderSizePixel = 0
-ESB1.Size = UDim2.new(1, 0, 1, 0)
-ESB1.Image = "http://www.roblox.com/asset/?id=12716765667"
+	local frame = script.Parent.Frame
+	local esb = frame.ESB
+	local frameclear = script.Parent.Frame.Frameclear
 
-ESB2.Name = "ESB2"
-ESB2.Parent = Frame_2
-ESB2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESB2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESB2.BorderSizePixel = 0
-ESB2.Size = UDim2.new(1, 0, 1, 0)
-ESB2.Visible = false
-ESB2.Image = "http://www.roblox.com/asset/?id=12716766581"
+	frame.Visible = true
+	frame:TweenSize(UDim2.new(0,250,0,250),
+		Enum.EasingDirection.Out,
+		Enum.EasingStyle.Quint,
+		1
+	)
+	wait(1.2)
+	local rep = 0
+	local max = math.random(2,4)
+	repeat
+		repeat
+			esb.Rotation = esb.Rotation + 2
+			task.wait(.01)
+		until esb.Rotation >= 358
+		esb.Rotation = 0
+		rep += 1
+		task.wait()
+	until rep >= max
+	frame:TweenSize(UDim2.new(0,0,0,0),
+		Enum.EasingDirection.In,
+		Enum.EasingStyle.Quint,
+		1
+	)
+	wait(0.9)
+	frame.Visible = false
+	-------
+	script.Parent.Parent.TTDhub.Frame.Visible = true
+	-------
+	script.Parent:Destroy()
 
-ESB3.Name = "ESB3"
-ESB3.Parent = Frame_2
-ESB3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESB3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESB3.BorderSizePixel = 0
-ESB3.Size = UDim2.new(1, 0, 1, 0)
-ESB3.Visible = false
-ESB3.Image = "http://www.roblox.com/asset/?id=12716767441"
-
-ESB4.Name = "ESB4"
-ESB4.Parent = Frame_2
-ESB4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESB4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESB4.BorderSizePixel = 0
-ESB4.Size = UDim2.new(1, 0, 1, 0)
-ESB4.Visible = false
-ESB4.Image = "http://www.roblox.com/asset/?id=12716768289"
-
-ESB5.Name = "ESB5"
-ESB5.Parent = Frame_2
-ESB5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESB5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESB5.BorderSizePixel = 0
-ESB5.Size = UDim2.new(1, 0, 1, 0)
-ESB5.Visible = false
-ESB5.Image = "http://www.roblox.com/asset/?id=12716769250"
-
-ESB6.Name = "ESB6"
-ESB6.Parent = Frame_2
-ESB6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESB6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESB6.BorderSizePixel = 0
-ESB6.Size = UDim2.new(1, 0, 1, 0)
-ESB6.Visible = false
-ESB6.Image = "http://www.roblox.com/asset/?id=12716802770"
-
-ESB7.Name = "ESB7"
-ESB7.Parent = Frame_2
-ESB7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESB7.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESB7.BorderSizePixel = 0
-ESB7.Size = UDim2.new(1, 0, 1, 0)
-ESB7.Visible = false
-ESB7.Image = "http://www.roblox.com/asset/?id=12716804112"
-
-ESB8.Name = "ESB8"
-ESB8.Parent = Frame_2
-ESB8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESB8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESB8.BorderSizePixel = 0
-ESB8.Size = UDim2.new(1, 0, 1, 0)
-ESB8.Visible = false
-ESB8.Image = "http://www.roblox.com/asset/?id=12716805335"
-
-ESB.Name = "ESB"
-ESB.Parent = Frame_2
-ESB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ESB.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESB.BorderSizePixel = 0
-ESB.Size = UDim2.new(1, 0, 1, 0)
-ESB.Visible = false
-ESB.Image = "http://www.roblox.com/asset/?id=12716855342"
-
-Frameclear.Name = "Frameclear"
-Frameclear.Parent = Frame_2
-Frameclear.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
-Frameclear.BorderSizePixel = 0
-Frameclear.Size = UDim2.new(1, 0, 0, 0)
-Frameclear.Visible = false
-
-local function FOLYQM_fake_script() -- TextButton.LocalScript 
+end
+coroutine.wrap(UFJP_fake_script)()
+local function RAST_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		script.Parent.Parent.Menu.Visible = not script.Parent.Parent.Menu.Visible
 	end)
 end
-coroutine.wrap(FOLYQM_fake_script)()
-local function PSPFPNU_fake_script() -- TextLabel_2.LocalScript 
+coroutine.wrap(RAST_fake_script)()
+local function QPIHV_fake_script() -- TextLabel_2.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_2)
 
 	local plrname = game.Players.LocalPlayer.DisplayName
 
 	script.Parent.Text = "Olá, "..plrname
 end
-coroutine.wrap(PSPFPNU_fake_script)()
-local function BIKV_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(QPIHV_fake_script)()
+local function DTMTIKT_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -853,8 +1004,8 @@ local function BIKV_fake_script() -- TextButton_2.LocalScript
 		)
 	end)
 end
-coroutine.wrap(BIKV_fake_script)()
-local function GGPSCGR_fake_script() -- TextButton_2.Hover 
+coroutine.wrap(DTMTIKT_fake_script)()
+local function ESOQ_fake_script() -- TextButton_2.Hover 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local color = script.Parent.TextColor3
@@ -866,16 +1017,34 @@ local function GGPSCGR_fake_script() -- TextButton_2.Hover
 		script.Parent.TextColor3 = color
 	end)
 end
-coroutine.wrap(GGPSCGR_fake_script)()
-local function EWGNFCV_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(ESOQ_fake_script)()
+local function OSZPTSE_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+		if game.Players.LocalPlayer.PlayerGui.TTDhub.notificacoes.Value == "Todas" then
+			local notify = game.Players.LocalPlayer.PlayerGui.TTDhub.Notificacao
+			notify.Visible = true
+			notify.Notitxt.Text = "Infinite Yield foi aberto"
+			game.SoundService:WaitForChild("NotifyGroup"):WaitForChild("Notify"):Play()
+			notify:TweenPosition(UDim2.new(0.386, 0,0.014, 0),
+				Enum.EasingDirection.In,
+				Enum.EasingStyle.Quart,
+				0.5
+			)
+			wait(1.6)
+			notify:TweenPosition(UDim2.new(0.386, 0,0, -150),
+				Enum.EasingDirection.In,
+				Enum.EasingStyle.Quart,
+				0.5
+			)
+			notify.Visible = false
+		end
 	end)
 end
-coroutine.wrap(EWGNFCV_fake_script)()
-local function CYHNKRD_fake_script() -- TextButton_3.Hover 
+coroutine.wrap(OSZPTSE_fake_script)()
+local function AUXLSDS_fake_script() -- TextButton_3.Hover 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local color = script.Parent.TextColor3
@@ -887,18 +1056,36 @@ local function CYHNKRD_fake_script() -- TextButton_3.Hover
 		script.Parent.TextColor3 = color
 	end)
 end
-coroutine.wrap(CYHNKRD_fake_script)()
-local function MZKX_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(AUXLSDS_fake_script)()
+local function NPBTNQ_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		local plr = game.Players.LocalPlayer
 		plr.PlayerGui.Avatar.Frame.ViewportFrame.PlayerViewmodel.Head.GUI.Frame.Badges.VIP.Visible = true
 		plr.Character.Head.GUI.Frame.Badges.VIP.Visible = true
+		if game.Players.LocalPlayer.PlayerGui.TTDhub.notificacoes.Value == "Todas" then
+			local notify = game.Players.LocalPlayer.PlayerGui.TTDhub.Notificacao
+			notify.Visible = true
+			notify.Notitxt.Text = "Tag VIP Desbloqueada (Só irá aparecer para você)"
+			game.SoundService:WaitForChild("NotifyGroup"):WaitForChild("Notify"):Play()
+			notify:TweenPosition(UDim2.new(0.386, 0,0.014, 0),
+				Enum.EasingDirection.In,
+				Enum.EasingStyle.Quart,
+				0.5
+			)
+			wait(1.6)
+			notify:TweenPosition(UDim2.new(0.386, 0,0, -150),
+				Enum.EasingDirection.In,
+				Enum.EasingStyle.Quart,
+				0.5
+			)
+			notify.Visible = false
+		end
 	end)
 end
-coroutine.wrap(MZKX_fake_script)()
-local function YPTOV_fake_script() -- TextButton_4.Hover 
+coroutine.wrap(NPBTNQ_fake_script)()
+local function QFFZODH_fake_script() -- TextButton_4.Hover 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	local color = script.Parent.TextColor3
@@ -910,8 +1097,8 @@ local function YPTOV_fake_script() -- TextButton_4.Hover
 		script.Parent.TextColor3 = color
 	end)
 end
-coroutine.wrap(YPTOV_fake_script)()
-local function MHRACN_fake_script() -- TextButton_5.Hover 
+coroutine.wrap(QFFZODH_fake_script)()
+local function BLVP_fake_script() -- TextButton_5.Hover 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	local color = script.Parent.TextColor3
@@ -923,8 +1110,8 @@ local function MHRACN_fake_script() -- TextButton_5.Hover
 		script.Parent.TextColor3 = color
 	end)
 end
-coroutine.wrap(MHRACN_fake_script)()
-local function CNUYFVY_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(BLVP_fake_script)()
+local function MIHVI_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -933,12 +1120,30 @@ local function CNUYFVY_fake_script() -- TextButton_6.LocalScript
 				v.Value = false
 			end
 		end
+		if game.Players.LocalPlayer.PlayerGui.TTDhub.notificacoes.Value == "Todas" then
+			local notify = game.Players.LocalPlayer.PlayerGui.TTDhub.Notificacao
+			notify.Visible = true
+			notify.Notitxt.Text = "Danças VIPs desbloqueadas (Reseta seu avatar para sumir as estrelas VIPs das danças)"
+			game.SoundService:WaitForChild("NotifyGroup"):WaitForChild("Notify"):Play()
+			notify:TweenPosition(UDim2.new(0.386, 0,0.014, 0),
+				Enum.EasingDirection.In,
+				Enum.EasingStyle.Quart,
+				0.5
+			)
+			wait(1.6)
+			notify:TweenPosition(UDim2.new(0.386, 0,0, -150),
+				Enum.EasingDirection.In,
+				Enum.EasingStyle.Quart,
+				0.5
+			)
+			notify.Visible = false
+		end
 		--	game.ReplicatedStorage.Animations.Wandinha.VIP.Value = false
 		--	game.ReplicatedStorage.Animations.BIZCOCHITO.VIP.Value = false
 	end)
 end
-coroutine.wrap(CNUYFVY_fake_script)()
-local function FRJJND_fake_script() -- TextButton_6.Hover 
+coroutine.wrap(MIHVI_fake_script)()
+local function PXZBAB_fake_script() -- TextButton_6.Hover 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	local color = script.Parent.TextColor3
@@ -950,8 +1155,8 @@ local function FRJJND_fake_script() -- TextButton_6.Hover
 		script.Parent.TextColor3 = color
 	end)
 end
-coroutine.wrap(FRJJND_fake_script)()
-local function IIBBRE_fake_script() -- TextButton_7.Hover 
+coroutine.wrap(PXZBAB_fake_script)()
+local function PFBJ_fake_script() -- TextButton_7.Hover 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	local color = script.Parent.TextColor3
@@ -963,8 +1168,8 @@ local function IIBBRE_fake_script() -- TextButton_7.Hover
 		script.Parent.TextColor3 = color
 	end)
 end
-coroutine.wrap(IIBBRE_fake_script)()
-local function HALTIC_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(PFBJ_fake_script)()
+local function FIBDQTJ_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -972,11 +1177,29 @@ local function HALTIC_fake_script() -- TextButton_7.LocalScript
 		local humanoid = game.Players.LocalPlayer.Character.Humanoid
 
 		humanoid.WalkSpeed = value
+		if game.Players.LocalPlayer.PlayerGui.TTDhub.notificacoes.Value == "Todas" then
+			local notify = game.Players.LocalPlayer.PlayerGui.TTDhub.Notificacao
+			notify.Visible = true
+			notify.Notitxt.Text = "Velocidade do jogador alterada para "..value
+			game.SoundService:WaitForChild("NotifyGroup"):WaitForChild("Notify"):Play()
+			notify:TweenPosition(UDim2.new(0.386, 0,0.014, 0),
+				Enum.EasingDirection.In,
+				Enum.EasingStyle.Quart,
+				0.5
+			)
+			wait(1.6)
+			notify:TweenPosition(UDim2.new(0.386, 0,0, -150),
+				Enum.EasingDirection.In,
+				Enum.EasingStyle.Quart,
+				0.5
+			)
+			notify.Visible = false
+		end
 	end)
 
 end
-coroutine.wrap(HALTIC_fake_script)()
-local function TTWNB_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(FIBDQTJ_fake_script)()
+local function SHDPPXR_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -984,11 +1207,29 @@ local function TTWNB_fake_script() -- TextButton_8.LocalScript
 		local humanoid = game.Players.LocalPlayer.Character.Humanoid
 
 		humanoid.JumpPower = value
+		if game.Players.LocalPlayer.PlayerGui.TTDhub.notificacoes.Value == "Todas" then
+			local notify = game.Players.LocalPlayer.PlayerGui.TTDhub.Notificacao
+			notify.Visible = true
+			notify.Notitxt.Text = "JumpPower do jogador alterada para "..value
+			game.SoundService:WaitForChild("NotifyGroup"):WaitForChild("Notify"):Play()
+			notify:TweenPosition(UDim2.new(0.386, 0,0.014, 0),
+				Enum.EasingDirection.In,
+				Enum.EasingStyle.Quart,
+				0.5
+			)
+			wait(1.6)
+			notify:TweenPosition(UDim2.new(0.386, 0,0, -150),
+				Enum.EasingDirection.In,
+				Enum.EasingStyle.Quart,
+				0.5
+			)
+			notify.Visible = false
+		end
 	end)
 
 end
-coroutine.wrap(TTWNB_fake_script)()
-local function YUAY_fake_script() -- TextButton_8.Hover 
+coroutine.wrap(SHDPPXR_fake_script)()
+local function ZQBI_fake_script() -- TextButton_8.Hover 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	local color = script.Parent.TextColor3
@@ -1000,8 +1241,8 @@ local function YUAY_fake_script() -- TextButton_8.Hover
 		script.Parent.TextColor3 = color
 	end)
 end
-coroutine.wrap(YUAY_fake_script)()
-local function IDZYL_fake_script() -- Principal_2.LocalScript 
+coroutine.wrap(ZQBI_fake_script)()
+local function CZAYP_fake_script() -- Principal_2.LocalScript 
 	local script = Instance.new('LocalScript', Principal_2)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -1020,8 +1261,8 @@ local function IDZYL_fake_script() -- Principal_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(IDZYL_fake_script)()
-local function OYBMMR_fake_script() -- VIP_2.LocalScript 
+coroutine.wrap(CZAYP_fake_script)()
+local function QLHWHWI_fake_script() -- VIP_2.LocalScript 
 	local script = Instance.new('LocalScript', VIP_2)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -1040,8 +1281,8 @@ local function OYBMMR_fake_script() -- VIP_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(OYBMMR_fake_script)()
-local function YKMNTP_fake_script() -- Avatar_2.LocalScript 
+coroutine.wrap(QLHWHWI_fake_script)()
+local function HUEM_fake_script() -- Avatar_2.LocalScript 
 	local script = Instance.new('LocalScript', Avatar_2)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -1060,8 +1301,8 @@ local function YKMNTP_fake_script() -- Avatar_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(YKMNTP_fake_script)()
-local function NCRICNZ_fake_script() -- Players.LocalScript 
+coroutine.wrap(HUEM_fake_script)()
+local function FEPSY_fake_script() -- Players.LocalScript 
 	local script = Instance.new('LocalScript', Players)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -1080,8 +1321,28 @@ local function NCRICNZ_fake_script() -- Players.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NCRICNZ_fake_script)()
-local function DWXY_fake_script() -- TextButton_9.LocalScript 
+coroutine.wrap(FEPSY_fake_script)()
+local function MVSYOCP_fake_script() -- Configs.LocalScript 
+	local script = Instance.new('LocalScript', Configs)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		for i,v in pairs(script.Parent.Parent:GetChildren()) do
+			v.BorderSizePixel = 0
+			script.Parent.BorderSizePixel = 2
+		end
+		local name = script.Parent.Name
+		for i,v in pairs(script.Parent.Parent.Parent:GetChildren()) do
+			v.Visible = false
+			if v.Name == "Lista" then
+				v.Visible = true
+			end
+			local z = script.Parent.Parent.Parent:WaitForChild(name)
+			z.Visible = true
+		end
+	end)
+end
+coroutine.wrap(MVSYOCP_fake_script)()
+local function UJLFW_fake_script() -- TextButton_9.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_9)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -1092,14 +1353,51 @@ local function DWXY_fake_script() -- TextButton_9.LocalScript
 			local plrHRP = plr.Character:FindFirstChild("HumanoidRootPart")
 			if plrHRP then
 				if HumanoidRP then
-					HumanoidRP.Position = workspace.testeplayer.Position
+					HumanoidRP.Position = plrHRP.Position
+					if game.Players.LocalPlayer.PlayerGui.TTDhub.notificacoes.Value == "Todas" then
+						local notify = game.Players.LocalPlayer.PlayerGui.TTDhub.Notificacao
+						notify.Visible = true
+						notify.Notitxt.Text = "Jogador teleportado"
+						game.SoundService:WaitForChild("NotifyGroup"):WaitForChild("Notify"):Play()
+						notify:TweenPosition(UDim2.new(0.386, 0,0.014, 0),
+							Enum.EasingDirection.In,
+							Enum.EasingStyle.Quart,
+							0.5
+						)
+						wait(1.6)
+						notify:TweenPosition(UDim2.new(0.386, 0,0, -150),
+							Enum.EasingDirection.In,
+							Enum.EasingStyle.Quart,
+							0.5
+						)
+						notify.Visible = false
+					end
+				else
+					if game.Players.LocalPlayer.PlayerGui.TTDhub.notificacoes.Value == "SomenteErros" or game.Players.LocalPlayer.PlayerGui.TTDhub.notificacoes.Value == "Todas" then
+						local notify = game.Players.LocalPlayer.PlayerGui.TTDhub.Notificacao
+						notify.Visible = true
+						notify.Notitxt.Text = "Error em tentativa de Teleporte"
+						game.SoundService:WaitForChild("NotifyGroup"):WaitForChild("Notify"):Play()
+						notify:TweenPosition(UDim2.new(0.386, 0,0.014, 0),
+							Enum.EasingDirection.In,
+							Enum.EasingStyle.Quart,
+							0.5
+						)
+						wait(1.6)
+						notify:TweenPosition(UDim2.new(0.386, 0,0, -150),
+							Enum.EasingDirection.In,
+							Enum.EasingStyle.Quart,
+							0.5
+						)
+						notify.Visible = false
+					end
 				end
 			end
 		end
 	end)
 end
-coroutine.wrap(DWXY_fake_script)()
-local function UGIP_fake_script() -- TextButton_9.Hover 
+coroutine.wrap(UJLFW_fake_script)()
+local function HIKN_fake_script() -- TextButton_9.Hover 
 	local script = Instance.new('LocalScript', TextButton_9)
 
 	local color = script.Parent.TextColor3
@@ -1111,8 +1409,8 @@ local function UGIP_fake_script() -- TextButton_9.Hover
 		script.Parent.TextColor3 = color
 	end)
 end
-coroutine.wrap(UGIP_fake_script)()
-local function GZQERH_fake_script() -- TextButton_10.LocalScript 
+coroutine.wrap(HIKN_fake_script)()
+local function ONDSP_fake_script() -- TextButton_10.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_10)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -1125,20 +1423,75 @@ local function GZQERH_fake_script() -- TextButton_10.LocalScript
 				if HumanoidRP then
 					if script.Parent.Parent.OnOff.ImageColor3 == Color3.fromRGB(255, 0, 0) then
 						script.Parent.Parent.OnOff.ImageColor3 = Color3.fromRGB(0, 255, 0)
+						if game.Players.LocalPlayer.PlayerGui.TTDhub.notificacoes.Value == "Todas" then
+							local notify = game.Players.LocalPlayer.PlayerGui.TTDhub.Notificacao
+							notify.Visible = true
+							notify.Notitxt.Text = "Loop de Teleporte foi ativado"
+							game.SoundService:WaitForChild("NotifyGroup"):WaitForChild("Notify"):Play()
+							notify:TweenPosition(UDim2.new(0.386, 0,0.014, 0),
+								Enum.EasingDirection.In,
+								Enum.EasingStyle.Quart,
+								0.5
+							)
+							wait(1.6)
+							notify:TweenPosition(UDim2.new(0.386, 0,0, -150),
+								Enum.EasingDirection.In,
+								Enum.EasingStyle.Quart,
+								0.5
+							)
+							notify.Visible = false
+						end
 						repeat
-							HumanoidRP.Position = workspace.testeplayer.Position
+							HumanoidRP.Position = plrHRP.Position
 							task.wait()
 						until script.Parent.Parent.OnOff.ImageColor3 == Color3.fromRGB(255, 0, 0)
 					else
 						script.Parent.Parent.OnOff.ImageColor3 = Color3.fromRGB(255, 0, 0)
+						if game.Players.LocalPlayer.PlayerGui.TTDhub.notificacoes.Value == "Todas" then
+							local notify = game.Players.LocalPlayer.PlayerGui.TTDhub.Notificacao
+							notify.Visible = true
+							notify.Notitxt.Text = "Loop de Teleporte foi desativado"
+							game.SoundService:WaitForChild("NotifyGroup"):WaitForChild("Notify"):Play()
+							notify:TweenPosition(UDim2.new(0.386, 0,0.014, 0),
+								Enum.EasingDirection.In,
+								Enum.EasingStyle.Quart,
+								0.5
+							)
+							wait(1.6)
+							notify:TweenPosition(UDim2.new(0.386, 0,0, -150),
+								Enum.EasingDirection.In,
+								Enum.EasingStyle.Quart,
+								0.5
+							)
+							notify.Visible = false
+						end
+					end
+				else
+					if game.Players.LocalPlayer.PlayerGui.TTDhub.notificacoes.Value == "SomenteErros" or game.Players.LocalPlayer.PlayerGui.TTDhub.notificacoes.Value == "Todas" then
+						local notify = game.Players.LocalPlayer.PlayerGui.TTDhub.Notificacao
+						notify.Visible = true
+						notify.Notitxt.Text = "Error em tentativa de Loop de teleporte"
+						game.SoundService:WaitForChild("NotifyGroup"):WaitForChild("Notify"):Play()
+						notify:TweenPosition(UDim2.new(0.386, 0,0.014, 0),
+							Enum.EasingDirection.In,
+							Enum.EasingStyle.Quart,
+							0.5
+						)
+						wait(1.6)
+						notify:TweenPosition(UDim2.new(0.386, 0,0, -150),
+							Enum.EasingDirection.In,
+							Enum.EasingStyle.Quart,
+							0.5
+						)
+						notify.Visible = false
 					end
 				end
 			end
 		end
 	end)
 end
-coroutine.wrap(GZQERH_fake_script)()
-local function EAZSWG_fake_script() -- TextButton_10.Hover 
+coroutine.wrap(ONDSP_fake_script)()
+local function PKHZ_fake_script() -- TextButton_10.Hover 
 	local script = Instance.new('LocalScript', TextButton_10)
 
 	local color = script.Parent.TextColor3
@@ -1150,8 +1503,8 @@ local function EAZSWG_fake_script() -- TextButton_10.Hover
 		script.Parent.TextColor3 = color
 	end)
 end
-coroutine.wrap(EAZSWG_fake_script)()
-local function MJSAVI_fake_script() -- Players_2.LocalScript 
+coroutine.wrap(PKHZ_fake_script)()
+local function BWVDYC_fake_script() -- Players_2.LocalScript 
 	local script = Instance.new('LocalScript', Players_2)
 
 	script.Parent.Funcao.TextBox.Changed:Connect(function()
@@ -1177,15 +1530,65 @@ local function MJSAVI_fake_script() -- Players_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(MJSAVI_fake_script)()
-local function RVGK_fake_script() -- Frame.KeyBinds 
-	local script = Instance.new('LocalScript', Frame)
+coroutine.wrap(BWVDYC_fake_script)()
+local function ZSBVJ_fake_script() -- TextButton_11.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_11)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local text = script.Parent.Parent.TextLabel
+		local value = game.Players.LocalPlayer.PlayerGui.TTDhub.notificacoes.Value
+		if text.Text == "Todas" then
+			text.Text = "SomenteErros"
+			value = "SomenteErros"
+		elseif text.Text == "SomenteErros" then
+			text.Text = "Nenhuma"
+			value = "Nenhuma"
+		elseif text.Text == "Nenhuma" then
+			text.Text = "Todas"
+			value = "Todas"
+		end
+	end)
+end
+coroutine.wrap(ZSBVJ_fake_script)()
+local function JOYGCH_fake_script() -- TextButton_11.Hover 
+	local script = Instance.new('LocalScript', TextButton_11)
+
+	local color = script.Parent.TextColor3
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.fromRGB(149, 73, 255)
+	end)
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = color
+	end)
+end
+coroutine.wrap(JOYGCH_fake_script)()
+local function BXIY_fake_script() -- Frame_2.KeyBinds 
+	local script = Instance.new('LocalScript', Frame_2)
 
 	local UIS = game:GetService("UserInputService")
 
 	UIS.InputBegan:Connect(function(input)
 		if input.KeyCode == Enum.KeyCode.RightControl then
 			script.Parent.Visible = not script.Parent.Visible
+			if game.Players.LocalPlayer.PlayerGui.TTDhub.notificacoes.Value == "Todas" then
+				local notify = game.Players.LocalPlayer.PlayerGui.TTDhub.Notificacao
+				notify.Visible = true
+				notify.Notitxt.Text = "GUI Fechado ou Aberto pela tecla (Right Ctrl)"
+				game.SoundService:WaitForChild("NotifyGroup"):WaitForChild("Notify"):Play()
+				notify:TweenPosition(UDim2.new(0.386, 0,0.014, 0),
+					Enum.EasingDirection.In,
+					Enum.EasingStyle.Quart,
+					0.5
+				)
+				wait(1.6)
+				notify:TweenPosition(UDim2.new(0.386, 0,0, -150),
+					Enum.EasingDirection.In,
+					Enum.EasingStyle.Quart,
+					0.5
+				)
+				notify.Visible = false
+			end
 		end
 		if input.KeyCode == Enum.KeyCode.T then
 			local HumanoidRP = game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
@@ -1195,7 +1598,45 @@ local function RVGK_fake_script() -- Frame.KeyBinds
 				local plrHRP = plr.Character:FindFirstChild("HumanoidRootPart")
 				if plrHRP then
 					if HumanoidRP then
-						HumanoidRP.Position = workspace.testeplayer.Position
+						HumanoidRP.Position = plrHRP.Position
+
+						if game.Players.LocalPlayer.PlayerGui.TTDhub.notificacoes.Value == "Todas" then
+							local notify = game.Players.LocalPlayer.PlayerGui.TTDhub.Notificacao
+							notify.Visible = true
+							notify.Notitxt.Text = "Jogador teleportado pela tecla (T)"
+							game.SoundService:WaitForChild("NotifyGroup"):WaitForChild("Notify"):Play()
+							notify:TweenPosition(UDim2.new(0.386, 0,0.014, 0),
+								Enum.EasingDirection.In,
+								Enum.EasingStyle.Quart,
+								0.5
+							)
+							wait(1.6)
+							notify:TweenPosition(UDim2.new(0.386, 0,0, -150),
+								Enum.EasingDirection.In,
+								Enum.EasingStyle.Quart,
+								0.5
+							)
+							notify.Visible = false
+						end
+					else
+						if game.Players.LocalPlayer.PlayerGui.TTDhub.notificacoes.Value == "SomenteErros" or game.Players.LocalPlayer.PlayerGui.TTDhub.notificacoes.Value == "Todas" then
+							local notify = game.Players.LocalPlayer.PlayerGui.TTDhub.Notificacao
+							notify.Visible = true
+							notify.Notitxt.Text = "Error em tentativa de Teleporte pela tecla (T)"
+							game.SoundService:WaitForChild("NotifyGroup"):WaitForChild("Notify"):Play()
+							notify:TweenPosition(UDim2.new(0.386, 0,0.014, 0),
+								Enum.EasingDirection.In,
+								Enum.EasingStyle.Quart,
+								0.5
+							)
+							wait(1.6)
+							notify:TweenPosition(UDim2.new(0.386, 0,0, -150),
+								Enum.EasingDirection.In,
+								Enum.EasingStyle.Quart,
+								0.5
+							)
+							notify.Visible = false
+						end
 					end
 				end
 			end
@@ -1210,12 +1651,69 @@ local function RVGK_fake_script() -- Frame.KeyBinds
 					if HumanoidRP then
 						if script.Parent.Menu.Players.looptp.OnOff.ImageColor3 == Color3.fromRGB(255, 0, 0) then
 							script.Parent.Menu.Players.looptp.OnOff.ImageColor3 = Color3.fromRGB(0, 255, 0)
+
+							if game.Players.LocalPlayer.PlayerGui.TTDhub.notificacoes.Value == "Todas" then
+								local notify = game.Players.LocalPlayer.PlayerGui.TTDhub.Notificacao
+								notify.Visible = true
+								notify.Notitxt.Text = "Loop de Teleporte foi ativado pela tecla (U)"
+								game.SoundService:WaitForChild("NotifyGroup"):WaitForChild("Notify"):Play()
+								notify:TweenPosition(UDim2.new(0.386, 0,0.014, 0),
+									Enum.EasingDirection.In,
+									Enum.EasingStyle.Quart,
+									0.5
+								)
+								wait(1.6)
+								notify:TweenPosition(UDim2.new(0.386, 0,0, -150),
+									Enum.EasingDirection.In,
+									Enum.EasingStyle.Quart,
+									0.5
+								)
+								notify.Visible = false
+							end
+
 							repeat
-								HumanoidRP.Position = workspace.testeplayer.Position
+								HumanoidRP.Position = plrHRP.Position
 								task.wait()
 							until script.Parent.Menu.Players.looptp.OnOff.ImageColor3 == Color3.fromRGB(255, 0, 0)
 						else
 							script.Parent.Menu.Players.looptp.OnOff.ImageColor3 = Color3.fromRGB(255, 0, 0)
+							if game.Players.LocalPlayer.PlayerGui.TTDhub.notificacoes.Value == "Todas" then
+								local notify = game.Players.LocalPlayer.PlayerGui.TTDhub.Notificacao
+								notify.Visible = true
+								notify.Notitxt.Text = "Loop de Teleporte foi desativado pela tecla (U)"
+								game.SoundService:WaitForChild("NotifyGroup"):WaitForChild("Notify"):Play()
+								notify:TweenPosition(UDim2.new(0.386, 0,0.014, 0),
+									Enum.EasingDirection.In,
+									Enum.EasingStyle.Quart,
+									0.5
+								)
+								wait(1.6)
+								notify:TweenPosition(UDim2.new(0.386, 0,0, -150),
+									Enum.EasingDirection.In,
+									Enum.EasingStyle.Quart,
+									0.5
+								)
+								notify.Visible = false
+							end
+						end
+					else
+						if game.Players.LocalPlayer.PlayerGui.TTDhub.notificacoes.Value == "SomenteErros" or game.Players.LocalPlayer.PlayerGui.TTDhub.notificacoes.Value == "Todas" then
+							local notify = game.Players.LocalPlayer.PlayerGui.TTDhub.Notificacao
+							notify.Visible = true
+							notify.Notitxt.Text = "Error em tentativa de Loop de teleporte pela tecla (U)"
+							game.SoundService:WaitForChild("NotifyGroup"):WaitForChild("Notify"):Play()
+							notify:TweenPosition(UDim2.new(0.386, 0,0.014, 0),
+								Enum.EasingDirection.In,
+								Enum.EasingStyle.Quart,
+								0.5
+							)
+							wait(1.6)
+							notify:TweenPosition(UDim2.new(0.386, 0,0, -150),
+								Enum.EasingDirection.In,
+								Enum.EasingStyle.Quart,
+								0.5
+							)
+							notify.Visible = false
 						end
 					end
 				end
@@ -1223,9 +1721,9 @@ local function RVGK_fake_script() -- Frame.KeyBinds
 		end
 	end)
 end
-coroutine.wrap(RVGK_fake_script)()
-local function FXWGY_fake_script() -- Frame.LocalScript 
-	local script = Instance.new('LocalScript', Frame)
+coroutine.wrap(BXIY_fake_script)()
+local function VIXYXKO_fake_script() -- Frame_2.LocalScript 
+	local script = Instance.new('LocalScript', Frame_2)
 
 	local UIS = game:GetService('UserInputService')
 	local frame = script.Parent
@@ -1262,8 +1760,8 @@ local function FXWGY_fake_script() -- Frame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(FXWGY_fake_script)()
-local function HYKGKCS_fake_script() -- ImageButton.LocalScript 
+coroutine.wrap(VIXYXKO_fake_script)()
+local function JLERTME_fake_script() -- ImageButton.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -1276,16 +1774,16 @@ local function HYKGKCS_fake_script() -- ImageButton.LocalScript
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(HYKGKCS_fake_script)()
-local function JNCH_fake_script() -- ImageButton_2.LocalScript 
+coroutine.wrap(JLERTME_fake_script)()
+local function VTEUJ_fake_script() -- ImageButton_2.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_2)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(JNCH_fake_script)()
-local function CEPB_fake_script() -- ImageButton_3.LocalScript 
+coroutine.wrap(VTEUJ_fake_script)()
+local function NXNQBV_fake_script() -- ImageButton_3.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_3)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -1298,8 +1796,8 @@ local function CEPB_fake_script() -- ImageButton_3.LocalScript
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(CEPB_fake_script)()
-local function TJUCVM_fake_script() -- TTDhub.LocalScript 
+coroutine.wrap(NXNQBV_fake_script)()
+local function QPTHY_fake_script() -- TTDhub.LocalScript 
 	local script = Instance.new('LocalScript', TTDhub)
 
 	local soundgroup = Instance.new("SoundGroup", game.SoundService)
@@ -1314,7 +1812,7 @@ local function TJUCVM_fake_script() -- TTDhub.LocalScript
 	selecionar.Name = "Selecionar"
 	selecionar.OutlineColor = Color3.fromRGB(0, 200, 255)
 	selecionar.FillTransparency = 1
-	selecionar.Adornee = workspace.ProPlayernaAk1
+	selecionar.Adornee = game.ReplicatedStorage
 
 	local ts = game:GetService("TweenService")
 	local ti = TweenInfo.new(
@@ -1334,135 +1832,12 @@ local function TJUCVM_fake_script() -- TTDhub.LocalScript
 		"StringValue",script.Parent.Frame.Menu.Players.plrname
 	)
 	realplrname.Name = "realplrname"
+	local notificacoes = Instance.new(
+		"StringValue",
+		script.Parent
+	)
+	notificacoes.Value = "Em Teste"
+	notificacoes.Name = "notificacoes"
 
 end
-coroutine.wrap(TJUCVM_fake_script)()
-local function LYWJO_fake_script() -- AberturaESB.LocalScript 
-	local script = Instance.new('LocalScript', AberturaESB)
-
-	local frame = script.Parent.Frame
-	local esb = frame.ESB
-	local esb1 = frame.ESB1
-	local esb2 = frame.ESB2
-	local esb3 = frame.ESB3
-	local esb4 = frame.ESB4
-	local esb5 = frame.ESB5
-	local esb6 = frame.ESB6
-	local esb7 = frame.ESB7
-	local esb8 = frame.ESB8
-	local frameclear = script.Parent.Frame.Frameclear
-
-
-	frame.Visible = true
-	frame:TweenSize(UDim2.new(0,250,0,250),
-		Enum.EasingDirection.Out,
-		Enum.EasingStyle.Quint,
-		1
-	)
-	wait(1.2)
-	local rep = 0
-	local max = math.random(3,5)
-	repeat
-		esb1.Visible = true
-		esb2.Visible = false
-		esb3.Visible = false
-		esb4.Visible = false
-		esb5.Visible = false
-		esb6.Visible = false
-		esb7.Visible = false
-		esb8.Visible = false
-		wait(.5)
-		esb1.Visible = false
-		esb2.Visible = true
-		esb3.Visible = false
-		esb4.Visible = false
-		esb5.Visible = false
-		esb6.Visible = false
-		esb7.Visible = false
-		esb8.Visible = false
-		wait(.5)
-		esb1.Visible = false
-		esb2.Visible = false
-		esb3.Visible = true
-		esb4.Visible = false
-		esb5.Visible = false
-		esb6.Visible = false
-		esb7.Visible = false
-		esb8.Visible = false
-		wait(.5)
-		esb1.Visible = false
-		esb2.Visible = false
-		esb3.Visible = false
-		esb4.Visible = true
-		esb5.Visible = false
-		esb6.Visible = false
-		esb7.Visible = false
-		esb8.Visible = false
-		wait(.5)
-		esb1.Visible = false
-		esb2.Visible = false
-		esb3.Visible = false
-		esb4.Visible = false
-		esb5.Visible = true
-		esb6.Visible = false
-		esb7.Visible = false
-		esb8.Visible = false
-		wait(.5)
-		esb1.Visible = false
-		esb2.Visible = false
-		esb3.Visible = false
-		esb4.Visible = false
-		esb5.Visible = false
-		esb6.Visible = true
-		esb7.Visible = false
-		esb8.Visible = false
-		wait(.5)
-		esb1.Visible = false
-		esb2.Visible = false
-		esb3.Visible = false
-		esb4.Visible = false
-		esb5.Visible = false
-		esb6.Visible = false
-		esb7.Visible = true
-		esb8.Visible = false
-		wait(.5)
-		esb1.Visible = false
-		esb2.Visible = false
-		esb3.Visible = false
-		esb4.Visible = false
-		esb5.Visible = false
-		esb6.Visible = false
-		esb7.Visible = false
-		esb8.Visible = true
-		rep += 1
-	until rep >= max
-	frameclear.Visible = true
-	frameclear:TweenSize(UDim2.new(1,0,1,0),
-		Enum.EasingDirection.Out,
-		Enum.EasingStyle.Quint,
-		2
-	)
-	wait(2)
-	esb1.Visible = false
-	esb.Visible = true
-	frameclear:TweenSize(UDim2.new(1,0,0,0),
-		Enum.EasingDirection.In,
-		Enum.EasingStyle.Quint,
-		2
-	)
-	wait(4)
-	frameclear.Visible = false
-	frame:TweenSize(UDim2.new(0,0,0,0),
-		Enum.EasingDirection.Out,
-		Enum.EasingStyle.Quint,
-		2
-	)
-	wait(2)
-	frame.Visible = false
-	-------
-	Frame.Visible = true -- vai plg
-	-------
-	script.Parent:Destroy()
-
-end
-coroutine.wrap(LYWJO_fake_script)()
+coroutine.wrap(QPTHY_fake_script)()
